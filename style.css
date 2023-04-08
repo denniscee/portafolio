@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+
+}
+@media (max-width:700px) {
+    .container{
+        flex-direction: column;
+    }
+}
+/* CONTENEDOR CABEZERA */
+.container__header{
+    background-image: url(./imagenes/paisaje.jpg) ;
+    background-size: cover;
+    height: 100vh;
+
+}
+.container__header--nav{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    margin: auto 10%;
+}
+.logo{
+    height: 7rem;
+    border: .3rem solid white;
+    border-radius: 50px;
+    transition: all 300ms;
+}
+.logo:hover{
+    transform: scale(1.15);
+    border-radius: 50px;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    list-style: none;
+}
+.nav ul a{
+    margin: .8rem;
+    padding: .8rem;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+.nav ul a:hover{
+    transform: scale(1.15);
+    border-radius: 15px;
+    border: 3px solid white;
+}
+/* BANNER */
+.container__header--banner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+.nombre{
+    font-size: 5rem;
+    color: white;
+}
+.informacion{
+    text-align: center;
+    font-size: 2.8rem;
+    color: aliceblue;
+    font-weight: 300;
+    margin-top: 3rem;
+}
+.social{
+    margin-top: 1.5rem;
+    height: .6rem;
+
+}
+.social img{
+       margin: .5rem;
+       transition: all 300ms;
+}
+.social img:hover{
+    transform: scale(1.5);
+}
+/* CONTENEDOR PROYECTOS */
+.contenedor__main{
+    background-color: rgb(1, 10, 5);
+    height: 100vh;
+    padding: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor__main h1{
+    color: aliceblue;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.contenedor__main p{
+    color: white;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+.tarjetas{
+    
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    
+    
+}
+figure{
+    background-color: white;
+    padding: auto;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0;
+    box-shadow: 0 2px 30px rgba(250, 250, 250, 0.80);
+}
+figure img{
+    transition: all 300ms;
+    border-radius: 15px;
+    height: 30rem;
+    object-fit: cover;
+}
+figure img:hover{
+    transform: scale(1.5);
+}
+/* CONTENEDOR FOOTER */
+.contenedor__fooder{
+    background-color: rgb(0, 0, 0);
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contenedor__fooder h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.contenedor__fooder p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contenedor__fooder span{
+    margin: .5rem;
+}
+hr{
+    width: 12%;
+    border: .3rem solid #00a9e2;
+}
+.contactos img{
+    transition: all 300ms;
+}
+.contactos img:hover{
+    transform: scale(1.5);
+}
+
